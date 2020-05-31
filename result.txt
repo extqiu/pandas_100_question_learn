@@ -1,0 +1,1096 @@
+		1. 导入 Pandas：
+		2. 查看 Pandas 版本信息：
+1.0.4
+		3. 从列表创建 Series：
+0    0
+1    1
+2    2
+3    3
+4    4
+dtype: int64
+		4. 从 Ndarray 创建 Series：
+a    0.510471
+b    1.226236
+c   -0.351532
+d    1.029293
+e    0.315466
+dtype: float64
+		5. 从字典创建 Series：
+a    1
+b    2
+c    3
+d    4
+e    5
+dtype: int64
+		6. 修改 Series 索引：
+0    0
+1    1
+2    2
+3    3
+4    4
+dtype: int64
+A    0
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+		7. Series 纵向拼接：
+a    1
+b    2
+c    3
+d    4
+e    5
+A    0
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+		8. Series 按指定索引删除元素：
+a    1
+b    2
+c    3
+d    4
+e    5
+A    0
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+a    1
+b    2
+c    3
+d    4
+A    0
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+		9. Series 修改指定索引元素：
+a    1
+b    2
+c    3
+d    4
+A    0
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+a    1
+b    2
+c    3
+d    4
+A    6
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+ 	10. Series 按指定索引查找元素：
+a    1
+b    2
+c    3
+d    4
+A    6
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+1
+ 	11. Series 切片操作：
+a    1
+b    2
+c    3
+d    4
+A    6
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+a    1
+b    2
+c    3
+dtype: int64
+a    1
+b    2
+c    3
+dtype: int64
+ 	12. Series 加法运算：
+a    1
+b    2
+c    3
+d    4
+A    6
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+a    1
+b    2
+c    3
+d    4
+e    5
+dtype: int64
+A    NaN
+B    NaN
+C    NaN
+D    NaN
+E    NaN
+a    2.0
+b    4.0
+c    6.0
+d    8.0
+e    NaN
+dtype: float64
+ 	13. Series 减法运算：
+a    1
+b    2
+c    3
+d    4
+A    6
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+a    1
+b    2
+c    3
+d    4
+e    5
+dtype: int64
+A    NaN
+B    NaN
+C    NaN
+D    NaN
+E    NaN
+a    0.0
+b    0.0
+c    0.0
+d    0.0
+e    NaN
+dtype: float64
+         14. Series 乘法运算：
+a    1
+b    2
+c    3
+d    4
+A    6
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+a    1
+b    2
+c    3
+d    4
+e    5
+dtype: int64
+A     NaN
+B     NaN
+C     NaN
+D     NaN
+E     NaN
+a     1.0
+b     4.0
+c     9.0
+d    16.0
+e     NaN
+dtype: float64
+         15. Series 除法运算：
+a    1
+b    2
+c    3
+d    4
+A    6
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+a    1
+b    2
+c    3
+d    4
+e    5
+dtype: int64
+A    NaN
+B    NaN
+C    NaN
+D    NaN
+E    NaN
+a    1.0
+b    1.0
+c    1.0
+d    1.0
+e    NaN
+dtype: float64
+ 	16. Series 求中位数：
+a    1
+b    2
+c    3
+d    4
+A    6
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+3.0
+         17. Series 求和：
+a    1
+b    2
+c    3
+d    4
+A    6
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+26
+         18. Series 求最大值：
+a    1
+b    2
+c    3
+d    4
+A    6
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+6
+         19. Series 求最小值：
+a    1
+b    2
+c    3
+d    4
+A    6
+B    1
+C    2
+D    3
+E    4
+dtype: int64
+1
+ 	20. 通过 NumPy 数组创建 DataFrame：
+DatetimeIndex(['2020-05-31 10:23:58.272767', '2020-06-01 10:23:58.272767',
+               '2020-06-02 10:23:58.272767', '2020-06-03 10:23:58.272767',
+               '2020-06-04 10:23:58.272767', '2020-06-05 10:23:58.272767'],
+              dtype='datetime64[ns]', freq='D')
+[[-0.61736799  1.57539444  2.40163636  2.18900926]
+ [-0.56152188 -1.49022907 -0.02901835  0.6354522 ]
+ [-0.32205514  1.14438106 -0.81999531 -1.79001573]
+ [-0.52633378  0.45855353 -1.42827657 -1.38141578]
+ [ 0.46117393 -0.4189442  -0.46784     0.97825306]
+ [-0.8322288   2.09471592 -0.90784453 -0.77134619]]
+                                   A         B         C         D
+2020-05-31 10:23:58.272767 -0.617368  1.575394  2.401636  2.189009
+2020-06-01 10:23:58.272767 -0.561522 -1.490229 -0.029018  0.635452
+2020-06-02 10:23:58.272767 -0.322055  1.144381 -0.819995 -1.790016
+2020-06-03 10:23:58.272767 -0.526334  0.458554 -1.428277 -1.381416
+2020-06-04 10:23:58.272767  0.461174 -0.418944 -0.467840  0.978253
+2020-06-05 10:23:58.272767 -0.832229  2.094716 -0.907845 -0.771346
+ 	21. 通过字典数组创建 DataFrame：
+{'animal': ['cat', 'cat', 'snake', 'dog', 'dog', 'cat', 'snake', 'cat', 'dog', 'dog'], 'age': [2.5, 3, 0.5, nan, 5, 2, 4.5, nan, 7, 3], 'visits': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1], 'priority': ['yes', 'yes', 'no', 'yes', 'no', 'no', 'no', 'yes', 'no', 'no']}
+['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+ 	22. 查看 DataFrame 的数据类型：
+animal       object
+age         float64
+visits        int64
+priority     object
+dtype: object
+		23. 预览 DataFrame 的前 5 行数据：
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+ 	24. 查看 DataFrame 的后 3 行数据：
+  animal  age  visits priority
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+ 	25.查看 DataFrame 的索引：
+Index(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'], dtype='object')
+ 	26. 查看 DataFrame 的列名：
+Index(['animal', 'age', 'visits', 'priority'], dtype='object')
+ 	27. 查看 DataFrame 的数值：(不显示行列)
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+[['cat' 2.5 1 'yes']
+ ['cat' 3.0 3 'yes']
+ ['snake' 0.5 2 'no']
+ ['dog' nan 3 'yes']
+ ['dog' 5.0 2 'no']
+ ['cat' 2.0 3 'no']
+ ['snake' 4.5 1 'no']
+ ['cat' nan 1 'yes']
+ ['dog' 7.0 2 'no']
+ ['dog' 3.0 1 'no']]
+         28. 查看 DataFrame 的统计数据：
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+            age     visits
+count  8.000000  10.000000
+mean   3.437500   1.900000
+std    2.007797   0.875595
+min    0.500000   1.000000
+25%    2.375000   1.000000
+50%    3.000000   2.000000
+75%    4.625000   2.750000
+max    7.000000   3.000000
+         29. DataFrame 转置操作：(从2行3列数据变成3行2列数据)
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+            a    b      c    d    e    f      g    h    i    j
+animal    cat  cat  snake  dog  dog  cat  snake  cat  dog  dog
+age       2.5    3    0.5  NaN    5    2    4.5  NaN    7    3
+visits      1    3      2    3    2    3      1    1    2    1
+priority  yes  yes     no  yes   no   no     no  yes   no   no
+         30. 对 DataFrame 进行按列排序：(升序)
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+  animal  age  visits priority
+c  snake  0.5       2       no
+f    cat  2.0       3       no
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+j    dog  3.0       1       no
+g  snake  4.5       1       no
+e    dog  5.0       2       no
+i    dog  7.0       2       no
+d    dog  NaN       3      yes
+h    cat  NaN       1      yes
+         31. 对 DataFrame 数据切片：(只显示第二到第四行数据)
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+  animal  age  visits priority
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+         32. 对 DataFrame 通过标签查询（单列）：
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+a    2.5
+b    3.0
+c    0.5
+d    NaN
+e    5.0
+f    2.0
+g    4.5
+h    NaN
+i    7.0
+j    3.0
+Name: age, dtype: float64
+a    2.5
+b    3.0
+c    0.5
+d    NaN
+e    5.0
+f    2.0
+g    4.5
+h    NaN
+i    7.0
+j    3.0
+Name: age, dtype: float64
+         33. 对 DataFrame 通过标签查询（多列）：
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+   age animal
+a  2.5    cat
+b  3.0    cat
+c  0.5  snake
+d  NaN    dog
+e  5.0    dog
+f  2.0    cat
+g  4.5  snake
+h  NaN    cat
+i  7.0    dog
+j  3.0    dog
+         34. 对 DataFrame 通过位置查询：(查询 2到3 行)
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+  animal  age  visits priority
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+         35. DataFrame 副本拷贝：
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+         36. 判断 DataFrame 元素是否为空：
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+   animal    age  visits  priority
+a   False  False   False     False
+b   False  False   False     False
+c   False  False   False     False
+d   False   True   False     False
+e   False  False   False     False
+f   False  False   False     False
+g   False  False   False     False
+h   False   True   False     False
+i   False  False   False     False
+j   False  False   False     False
+         37. 添加列数据：
+  animal  age  visits priority
+a    cat  2.5       1      yes
+b    cat  3.0       3      yes
+c  snake  0.5       2       no
+d    dog  NaN       3      yes
+e    dog  5.0       2       no
+f    cat  2.0       3       no
+g  snake  4.5       1       no
+h    cat  NaN       1      yes
+i    dog  7.0       2       no
+j    dog  3.0       1       no
+  animal  age  visits priority  No.
+a    cat  2.5       1      yes    0
+b    cat  3.0       3      yes    1
+c  snake  0.5       2       no    2
+d    dog  NaN       3      yes    3
+e    dog  5.0       2       no    4
+f    cat  2.0       3       no    5
+g  snake  4.5       1       no    6
+h    cat  NaN       1      yes    7
+i    dog  7.0       2       no    8
+j    dog  3.0       1       no    9
+         38. 根据 DataFrame 的下标值进行更改。：(# 修改第 2 行与第 2 列对应的值)
+  animal  age  visits priority  No.
+a    cat  2.5       1      yes    0
+b    cat  3.0       3      yes    1
+c  snake  0.5       2       no    2
+d    dog  NaN       3      yes    3
+e    dog  5.0       2       no    4
+f    cat  2.0       3       no    5
+g  snake  4.5       1       no    6
+h    cat  NaN       1      yes    7
+i    dog  7.0       2       no    8
+j    dog  3.0       1       no    9
+  animal  age  visits priority  No.
+a    cat  2.5       1      yes    0
+b    cat  2.0       3      yes    1
+c  snake  0.5       2       no    2
+d    dog  NaN       3      yes    3
+e    dog  5.0       2       no    4
+f    cat  2.0       3       no    5
+g  snake  4.5       1       no    6
+h    cat  NaN       1      yes    7
+i    dog  7.0       2       no    8
+j    dog  3.0       1       no    9
+         39. 根据 DataFrame 的标签对数据进行修改：(修改f行age列)
+  animal  age  visits priority  No.
+a    cat  2.5       1      yes    0
+b    cat  2.0       3      yes    1
+c  snake  0.5       2       no    2
+d    dog  NaN       3      yes    3
+e    dog  5.0       2       no    4
+f    cat  2.0       3       no    5
+g  snake  4.5       1       no    6
+h    cat  NaN       1      yes    7
+i    dog  7.0       2       no    8
+j    dog  3.0       1       no    9
+  animal  age  visits priority  No.
+a    cat  2.5       1      yes    0
+b    cat  2.0       3      yes    1
+c  snake  0.5       2       no    2
+d    dog  NaN       3      yes    3
+e    dog  5.0       2       no    4
+f    cat  1.5       3       no    5
+g  snake  4.5       1       no    6
+h    cat  NaN       1      yes    7
+i    dog  7.0       2       no    8
+j    dog  3.0       1       no    9
+         40. DataFrame 求平均值操作：
+  animal  age  visits priority  No.
+a    cat  2.5       1      yes    0
+b    cat  2.0       3      yes    1
+c  snake  0.5       2       no    2
+d    dog  NaN       3      yes    3
+e    dog  5.0       2       no    4
+f    cat  1.5       3       no    5
+g  snake  4.5       1       no    6
+h    cat  NaN       1      yes    7
+i    dog  7.0       2       no    8
+j    dog  3.0       1       no    9
+age       3.25
+visits    1.90
+No.       4.50
+dtype: float64
+         41. 对 DataFrame 中任意列做求和操作：
+  animal  age  visits priority  No.
+a    cat  2.5       1      yes    0
+b    cat  2.0       3      yes    1
+c  snake  0.5       2       no    2
+d    dog  NaN       3      yes    3
+e    dog  5.0       2       no    4
+f    cat  1.5       3       no    5
+g  snake  4.5       1       no    6
+h    cat  NaN       1      yes    7
+i    dog  7.0       2       no    8
+j    dog  3.0       1       no    9
+19
+         42. 将字符串转化为小写字母：
+0       A
+1       B
+2       C
+3    Aaba
+4    Baca
+5     NaN
+6    CABA
+7     dog
+8     cat
+dtype: object
+0       a
+1       b
+2       c
+3    aaba
+4    baca
+5     NaN
+6    caba
+7     dog
+8     cat
+dtype: object
+         43. 将字符串转化为大写字母：
+0       A
+1       B
+2       C
+3    Aaba
+4    Baca
+5     NaN
+6    CABA
+7     dog
+8     cat
+dtype: object
+0       A
+1       B
+2       C
+3    AABA
+4    BACA
+5     NaN
+6    CABA
+7     DOG
+8     CAT
+dtype: object
+         44. 对缺失值进行填充：
+  animal  age  visits priority  No.
+a    cat  2.5       1      yes    0
+b    cat  2.0       3      yes    1
+c  snake  0.5       2       no    2
+d    dog  NaN       3      yes    3
+e    dog  5.0       2       no    4
+f    cat  1.5       3       no    5
+g  snake  4.5       1       no    6
+h    cat  NaN       1      yes    7
+i    dog  7.0       2       no    8
+j    dog  3.0       1       no    9
+  animal  age  visits priority  No.
+a    cat  2.5       1      yes    0
+b    cat  2.0       3      yes    1
+c  snake  0.5       2       no    2
+d    dog  3.0       3      yes    3
+e    dog  5.0       2       no    4
+f    cat  1.5       3       no    5
+g  snake  4.5       1       no    6
+h    cat  3.0       1      yes    7
+i    dog  7.0       2       no    8
+j    dog  3.0       1       no    9
+         45. 删除存在缺失值的行：
+  animal  age  visits priority  No.
+a    cat  2.5       1      yes    0
+b    cat  2.0       3      yes    1
+c  snake  0.5       2       no    2
+d    dog  NaN       3      yes    3
+e    dog  5.0       2       no    4
+f    cat  1.5       3       no    5
+g  snake  4.5       1       no    6
+h    cat  NaN       1      yes    7
+i    dog  7.0       2       no    8
+j    dog  3.0       1       no    9
+  animal  age  visits priority  No.
+a    cat  2.5       1      yes    0
+b    cat  2.0       3      yes    1
+c  snake  0.5       2       no    2
+e    dog  5.0       2       no    4
+f    cat  1.5       3       no    5
+g  snake  4.5       1       no    6
+i    dog  7.0       2       no    8
+j    dog  3.0       1       no    9
+         46. DataFrame 按指定列对齐(key)：
+    key  one
+0  foo1    1
+1  foo2    2
+    key  two
+0  foo2    4
+1  foo3    5
+    key  one  two
+0  foo2    2    4
+ 	47. CSV 文件写入：
+写入成功.
+         48. CSV 文件读取：
+  Unnamed: 0 animal  age  visits priority  No.
+0          a    cat  2.5       1      yes    0
+1          b    cat  2.0       3      yes    1
+2          c  snake  0.5       2       no    2
+3          d    dog  NaN       3      yes    3
+4          e    dog  5.0       2       no    4
+5          f    cat  1.5       3       no    5
+6          g  snake  4.5       1       no    6
+7          h    cat  NaN       1      yes    7
+8          i    dog  7.0       2       no    8
+9          j    dog  3.0       1       no    9
+ 	49. Excel 写入操作：
+写入成功.
+ 	50. Excel 读取操作：
+  Unnamed: 0 animal  age  visits priority  No.
+0          a    cat  2.5       1      yes    0
+1          b    cat  2.0       3      yes    1
+2          c  snake  0.5       2       no    2
+3          d    dog  NaN       3      yes    3
+4          e    dog  5.0       2       no    4
+5          f    cat  1.5       3       no    5
+6          g  snake  4.5       1       no    6
+7          h    cat  NaN       1      yes    7
+8          i    dog  7.0       2       no    8
+9          j    dog  3.0       1       no    9
+ 	51. 建立一个以 2018 年每一天为索引，值为随机数的 Series：
+DatetimeIndex(['2018-01-01', '2018-01-02', '2018-01-03', '2018-01-04',
+               '2018-01-05', '2018-01-06', '2018-01-07', '2018-01-08',
+               '2018-01-09', '2018-01-10',
+               ...
+               '2018-12-22', '2018-12-23', '2018-12-24', '2018-12-25',
+               '2018-12-26', '2018-12-27', '2018-12-28', '2018-12-29',
+               '2018-12-30', '2018-12-31'],
+              dtype='datetime64[ns]', length=365, freq='D')
+2018-01-01    0.047182
+2018-01-02    0.208588
+2018-01-03    0.377004
+2018-01-04    0.888347
+2018-01-05    0.689585
+                ...   
+2018-12-27    0.640401
+2018-12-28    0.905511
+2018-12-29    0.186048
+2018-12-30    0.227638
+2018-12-31    0.332342
+Freq: D, Length: 365, dtype: float64
+ 	52. 统计s 中每一个周三对应值的和：
+2018-01-03    0.377004
+2018-01-10    0.555464
+2018-01-17    0.687502
+2018-01-24    0.408121
+2018-01-31    0.915852
+2018-02-07    0.637162
+2018-02-14    0.678102
+2018-02-21    0.036054
+2018-02-28    0.211290
+2018-03-07    0.131627
+2018-03-14    0.504310
+2018-03-21    0.427177
+2018-03-28    0.712989
+2018-04-04    0.172925
+2018-04-11    0.861634
+2018-04-18    0.170287
+2018-04-25    0.330461
+2018-05-02    0.948205
+2018-05-09    0.855869
+2018-05-16    0.925087
+2018-05-23    0.987243
+2018-05-30    0.828661
+2018-06-06    0.630236
+2018-06-13    0.842468
+2018-06-20    0.248175
+2018-06-27    0.752078
+2018-07-04    0.848869
+2018-07-11    0.498742
+2018-07-18    0.374149
+2018-07-25    0.390596
+2018-08-01    0.934147
+2018-08-08    0.695439
+2018-08-15    0.312646
+2018-08-22    0.940245
+2018-08-29    0.237931
+2018-09-05    0.991817
+2018-09-12    0.219823
+2018-09-19    0.338289
+2018-09-26    0.912893
+2018-10-03    0.522862
+2018-10-10    0.014847
+2018-10-17    0.701226
+2018-10-24    0.251793
+2018-10-31    0.196768
+2018-11-07    0.123659
+2018-11-14    0.897345
+2018-11-21    0.106226
+2018-11-28    0.848924
+2018-12-05    0.870068
+2018-12-12    0.922773
+2018-12-19    0.884753
+2018-12-26    0.940427
+dtype: float64
+
+
+29.81323815692661
+ 	53. 统计s中每个月值的平均值：
+DatetimeIndexResampler [freq=<MonthEnd>, axis=0, closed=right, label=right, convention=start, base=0]
+
+
+2018-01-31    0.477702
+2018-02-28    0.518814
+2018-03-31    0.545690
+2018-04-30    0.500791
+2018-05-31    0.570926
+2018-06-30    0.458266
+2018-07-31    0.546578
+2018-08-31    0.615474
+2018-09-30    0.468098
+2018-10-31    0.451886
+2018-11-30    0.599065
+2018-12-31    0.528482
+Freq: M, dtype: float64
+ 	54. 将 Series 中的时间进行转换（秒转分钟）(不理解)：
+DatetimeIndex(['2020-05-31 10:23:58.889940', '2020-05-31 10:23:59.889940',
+               '2020-05-31 10:24:00.889940', '2020-05-31 10:24:01.889940',
+               '2020-05-31 10:24:02.889940', '2020-05-31 10:24:03.889940',
+               '2020-05-31 10:24:04.889940', '2020-05-31 10:24:05.889940',
+               '2020-05-31 10:24:06.889940', '2020-05-31 10:24:07.889940',
+               '2020-05-31 10:24:08.889940', '2020-05-31 10:24:09.889940',
+               '2020-05-31 10:24:10.889940', '2020-05-31 10:24:11.889940',
+               '2020-05-31 10:24:12.889940', '2020-05-31 10:24:13.889940',
+               '2020-05-31 10:24:14.889940', '2020-05-31 10:24:15.889940',
+               '2020-05-31 10:24:16.889940', '2020-05-31 10:24:17.889940',
+               '2020-05-31 10:24:18.889940', '2020-05-31 10:24:19.889940',
+               '2020-05-31 10:24:20.889940', '2020-05-31 10:24:21.889940',
+               '2020-05-31 10:24:22.889940', '2020-05-31 10:24:23.889940',
+               '2020-05-31 10:24:24.889940', '2020-05-31 10:24:25.889940',
+               '2020-05-31 10:24:26.889940', '2020-05-31 10:24:27.889940',
+               '2020-05-31 10:24:28.889940', '2020-05-31 10:24:29.889940',
+               '2020-05-31 10:24:30.889940', '2020-05-31 10:24:31.889940',
+               '2020-05-31 10:24:32.889940', '2020-05-31 10:24:33.889940',
+               '2020-05-31 10:24:34.889940', '2020-05-31 10:24:35.889940',
+               '2020-05-31 10:24:36.889940', '2020-05-31 10:24:37.889940',
+               '2020-05-31 10:24:38.889940', '2020-05-31 10:24:39.889940',
+               '2020-05-31 10:24:40.889940', '2020-05-31 10:24:41.889940',
+               '2020-05-31 10:24:42.889940', '2020-05-31 10:24:43.889940',
+               '2020-05-31 10:24:44.889940', '2020-05-31 10:24:45.889940',
+               '2020-05-31 10:24:46.889940', '2020-05-31 10:24:47.889940',
+               '2020-05-31 10:24:48.889940', '2020-05-31 10:24:49.889940',
+               '2020-05-31 10:24:50.889940', '2020-05-31 10:24:51.889940',
+               '2020-05-31 10:24:52.889940', '2020-05-31 10:24:53.889940',
+               '2020-05-31 10:24:54.889940', '2020-05-31 10:24:55.889940',
+               '2020-05-31 10:24:56.889940', '2020-05-31 10:24:57.889940',
+               '2020-05-31 10:24:58.889940', '2020-05-31 10:24:59.889940',
+               '2020-05-31 10:25:00.889940', '2020-05-31 10:25:01.889940',
+               '2020-05-31 10:25:02.889940', '2020-05-31 10:25:03.889940',
+               '2020-05-31 10:25:04.889940', '2020-05-31 10:25:05.889940',
+               '2020-05-31 10:25:06.889940', '2020-05-31 10:25:07.889940',
+               '2020-05-31 10:25:08.889940', '2020-05-31 10:25:09.889940',
+               '2020-05-31 10:25:10.889940', '2020-05-31 10:25:11.889940',
+               '2020-05-31 10:25:12.889940', '2020-05-31 10:25:13.889940',
+               '2020-05-31 10:25:14.889940', '2020-05-31 10:25:15.889940',
+               '2020-05-31 10:25:16.889940', '2020-05-31 10:25:17.889940',
+               '2020-05-31 10:25:18.889940', '2020-05-31 10:25:19.889940',
+               '2020-05-31 10:25:20.889940', '2020-05-31 10:25:21.889940',
+               '2020-05-31 10:25:22.889940', '2020-05-31 10:25:23.889940',
+               '2020-05-31 10:25:24.889940', '2020-05-31 10:25:25.889940',
+               '2020-05-31 10:25:26.889940', '2020-05-31 10:25:27.889940',
+               '2020-05-31 10:25:28.889940', '2020-05-31 10:25:29.889940',
+               '2020-05-31 10:25:30.889940', '2020-05-31 10:25:31.889940',
+               '2020-05-31 10:25:32.889940', '2020-05-31 10:25:33.889940',
+               '2020-05-31 10:25:34.889940', '2020-05-31 10:25:35.889940',
+               '2020-05-31 10:25:36.889940', '2020-05-31 10:25:37.889940'],
+              dtype='datetime64[ns]', freq='S')
+100
+2020-05-31 10:23:58.889940    263
+2020-05-31 10:23:59.889940    137
+2020-05-31 10:24:00.889940    415
+2020-05-31 10:24:01.889940    251
+2020-05-31 10:24:02.889940    286
+                             ... 
+2020-05-31 10:25:33.889940    428
+2020-05-31 10:25:34.889940    264
+2020-05-31 10:25:35.889940    427
+2020-05-31 10:25:36.889940     50
+2020-05-31 10:25:37.889940    288
+Freq: S, Length: 100, dtype: int64
+2020-05-31 10:23:00      400
+2020-05-31 10:24:00    14633
+2020-05-31 10:25:00    10079
+Freq: T, dtype: int64
+ 	55. UTC 世界时间标准：(结果不正确 时间标准时间+8=北京时间)
+DatetimeIndex(['2020-05-31 10:23:58.897897'], dtype='datetime64[ns]', freq='D')
+2020-05-31 10:23:58.897897   -0.311418
+Freq: D, dtype: float64
+输出UTC 时间
+2020-05-31 10:23:58.897897+00:00   -0.311418
+Freq: D, dtype: float64
+ 	56. 转换为上海所在时区：(结果不正确)
+2020-05-31 18:23:58.897897+08:00   -0.311418
+Freq: D, dtype: float64
+ 	57.不同时间表示方式的转换：
+2018-01-31   -0.877407
+2018-02-28    0.713779
+2018-03-31    0.192943
+2018-04-30    1.523184
+2018-05-31    0.437012
+Freq: M, dtype: float64
+2018-01   -0.877407
+2018-02    0.713779
+2018-03    0.192943
+2018-04    1.523184
+2018-05    0.437012
+Freq: M, dtype: float64
+2018-01-01   -0.877407
+2018-02-01    0.713779
+2018-03-01    0.192943
+2018-04-01    1.523184
+2018-05-01    0.437012
+Freq: MS, dtype: float64
+ 	58. 创建多重索引 Series：
+MultiIndex([('A', 0),
+            ('A', 1),
+            ('A', 2),
+            ('A', 3),
+            ('A', 4),
+            ('A', 5),
+            ('A', 6),
+            ('A', 7),
+            ('A', 8),
+            ('A', 9),
+            ('B', 0),
+            ('B', 1),
+            ('B', 2),
+            ('B', 3),
+            ('B', 4),
+            ('B', 5),
+            ('B', 6),
+            ('B', 7),
+            ('B', 8),
+            ('B', 9),
+            ('C', 0),
+            ('C', 1),
+            ('C', 2),
+            ('C', 3),
+            ('C', 4),
+            ('C', 5),
+            ('C', 6),
+            ('C', 7),
+            ('C', 8),
+            ('C', 9)],
+           )
+A  0    0.167573
+   1    0.601021
+   2    0.513339
+   3    0.681371
+   4    0.420981
+   5    0.524316
+   6    0.108609
+   7    0.623939
+   8    0.896287
+   9    0.567529
+B  0    0.978623
+   1    0.049363
+   2    0.121734
+   3    0.102786
+   4    0.511169
+   5    0.412004
+   6    0.114903
+   7    0.740616
+   8    0.924348
+   9    0.006667
+C  0    0.159978
+   1    0.246297
+   2    0.990004
+   3    0.123224
+   4    0.814088
+   5    0.804507
+   6    0.501710
+   7    0.979654
+   8    0.955605
+   9    0.015189
+dtype: float64
+ 	59. 多重索引 Series 查询：
+A  1    0.601021
+   3    0.681371
+   6    0.108609
+B  1    0.049363
+   3    0.102786
+   6    0.114903
+C  1    0.246297
+   3    0.123224
+   6    0.501710
+dtype: float64
+ 	60. 多重索引 Series 切片：
+A  0    0.167573
+   1    0.601021
+   2    0.513339
+   3    0.681371
+   4    0.420981
+   5    0.524316
+   6    0.108609
+   7    0.623939
+   8    0.896287
+   9    0.567529
+B  0    0.978623
+   1    0.049363
+   2    0.121734
+   3    0.102786
+   4    0.511169
+   5    0.412004
+   6    0.114903
+   7    0.740616
+   8    0.924348
+   9    0.006667
+C  0    0.159978
+   1    0.246297
+   2    0.990004
+   3    0.123224
+   4    0.814088
+   5    0.804507
+   6    0.501710
+   7    0.979654
+   8    0.955605
+   9    0.015189
+dtype: float64
+A  5    0.524316
+   6    0.108609
+   7    0.623939
+   8    0.896287
+   9    0.567529
+B  5    0.412004
+   6    0.114903
+   7    0.740616
+   8    0.924348
+   9    0.006667
+dtype: float64
+A  5    0.524316
+   6    0.108609
+   7    0.623939
+   8    0.896287
+   9    0.567529
+B  5    0.412004
+   6    0.114903
+   7    0.740616
+   8    0.924348
+   9    0.006667
+dtype: float64
